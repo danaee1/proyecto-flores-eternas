@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Flowers - Pedidos de Flores Eternas</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Eternal Flowers</h1>
+        <p>Flores eternas para ocasiones especiales</p>
+    </header>
+
+    <main>
+        <section class=" flowers-grid" id="flowersGrid">
+            <!-- Flores se cargarán aquí via JS -->
+        </section>
+
+        <section class="order-form">
+            <h2>Realizar Pedido</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="fecha">Fecha para el pedido:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="total">Monto total:</label>
+                    <input type="number" id="total" name="total" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción de elementos:</label>
+                    <textarea id="descripcion" name="descripcion" rows="3" placeholder="Ej: Ramo de rosas rojas con baby's breath"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Confirmar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Redes sociales:</p>
+        <div class="social-links">
+            <a href="#" target="_blank">WhatsApp</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+</html>
